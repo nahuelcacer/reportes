@@ -1,0 +1,27 @@
+extends index.pug 
+block content
+    div(class="mayor")
+        div(class="padre")
+            form(action="/caja" method="POST")
+                div(class="boxpadre")
+                    div(class="box1caja") FECHA 
+                        input(type="date" name="datecaja")
+                    div(class="box2caja") CUENTA DEBITO 
+                        select(name="bancocaja") 
+                            option(value="0110129104292067525") BANCO NACION
+                            option(value="311020003000004886900") BANCO DEL CHACO
+                div(class="boxpersonal")
+                    div(class="personaldiv")
+                        div(class="personalname") MARCOS BIANCIOTTO
+                        input(type="text" name="marcosb" placeholder="ingrese sueldo")
+                    div(class="personaldiv") 
+                        div(class="personalname") MARIA LUISA FARIAS 
+                        input(type="text" name="mari" placeholder="ingrese sueldo")     
+                    div(class="personaldiv")   
+                        div(class="personalname") NORMA BEATRIZ FARIAS 
+                        input(type="text" name="norma" placeholder="ingrese sueldo")      
+                    div(class="personaldiv")  
+                        div(class="personalname") CLAUDIA GARCIA BORGHES   
+                        input(type="text" name="claudia" placeholder="ingrese sueldo") 
+                    div(class="btn-reporte")
+                        button Crear reporte

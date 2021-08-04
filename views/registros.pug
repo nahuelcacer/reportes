@@ -1,0 +1,26 @@
+extends index.pug
+block content
+    nav 
+        div(class="nav-report") Reporte Sueldos
+            div
+                a(href="/colegio") COLEGIO DE ESCRIBANOS
+            div 
+                a(href="/caja") CAJA NOTARIAL
+
+    div
+        form(action="/" method="POST")
+            table 
+                tr 
+                    th Nombre 
+                    th Importe Sueldo
+                    th Edicion
+                    each personal in personals
+                        tr 
+                            td  #{personal.nombre}
+                            
+                            td 
+                                input(type="text" name="" + personal.nombre)
+                            td 
+                                a(href="/perfil/" + personal._id) Editar
+            button Crear reporte
+        

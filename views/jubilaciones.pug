@@ -1,0 +1,136 @@
+extends index.pug 
+block content
+    div 
+        h1 Jubilaciones y Pensiones 
+        div(class="padre")    
+            form(action="/jubilaciones" method="post") <!-- form para enviar datos -->
+                div(class="a")
+                    div 
+                        input(type="date" name="datecaja")
+
+                    div Periodo:
+                        div 
+                            input(type="text" name="periodo")
+                    div 
+                        select(name="bancocaja") 
+                            option(value="0110129104292067525") BANCO NACION
+                            option(value="311020003000004886900") BANCO DEL CHACO
+                div(class="boxpersonal")
+                    div(class="personaldiv")
+                        div(class="personalname") SARDA DE BAXTER ELDA AIDILLA
+                        input(type="text" name="sarda" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") GONGORA ESTHER ANSELMA
+                        input(type="text" name="gongora" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") NOZIGLIA MARINA E. L.
+                        input(type="text" name="noziglia" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") BINAGHI MARIA YOLANDA
+                        input(type="text" name="binaghi" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") LEVY DE SILVA GLORIA EDITH
+                        input(type="text" name="levy" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") CAMODECA DE LUGON CARMEN
+                        input(type="text" name="camodeca" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") LAFUENTE JORGA MANUEL
+                        input(type="text" name="lafuente" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") PASQUALI DE SUDRIA MARIA E
+                        input(type="text" name="pasquali" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") CASAVECCHIA GLORIA NOEMI 
+                        input(type="text" name="casavecchia" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") HARDY ESTELA SUSANA 
+                        input(type="text" name="hardy" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") BERGIA DE KLEISINGER ELDA 
+                        input(type="text" name="bergia" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") MARINICH LUCIA
+                        input(type="text" name="marinich" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") LIMBERTI GUILLERMO ALFREDO
+                        input(type="text" name="limberti" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") HERRERO DE POLITIS LOLA
+                        input(type="text" name="herrero" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") MANGINI ALFREDO ENRIQUE 
+                        input(type="text" name="mangini" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") VIDAÑA DE GROSSI MARIA E
+                        input(type="text" name="vidaña" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") VILLANUEVA DE CORREGIDO V. C.
+                        input(type="text" name="villanueva" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") PASQUALI DE SUDRIA M. PENSION
+                        input(type="text" name="pasqualipension" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") DIESSLER OLGA NORMA
+                        input(type="text" name="diessler" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") TORNERO WILMA IRENE
+                        input(type="text" name="tornero" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") ASEF MIRIAM ETHEL
+                        input(type="text" name="asef" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") RODRIGUEZ MARTA AZUCENA
+                        input(type="text" name="rodriguez" placeholder="ingrese sueldo")
+                    div(class="personaldiv")
+                        div(class="personalname") GONZALEZ DE GOROSTIZU ESTHER 
+                        input(type="text" name="gorostizu" placeholder="ingrese sueldo")
+                    
+                    div(class="btn-reporte")
+                        button Reporte
+        h1 Jubilados y Pensionados (Proveedores)
+        div(class="padre") 
+            form(method="post" action="/jubilacionesprov")
+                div(class="a")
+                    div 
+                        input(type="date" name="datecaja")
+
+                    div Periodo:
+                        div 
+                            input(type="text" name="periodo")
+                    div 
+                        select(name="bancocaja") 
+                            option(value="0110129104292067525") BANCO NACION
+                            option(value="311020003000004886900") BANCO DEL CHACO
+                div(class="boxpersonal")
+                    div(class="personaldiv")
+                        div(class="personalname") TAUGUINAS NILA AMPARO
+                        input(type="text" name="tauguinas" placeholder="ingrese sueldo")
+                div(class="boxpersonal")
+                    div(class="personaldiv")
+                        div(class="personalname") PEREZ DE OZUNA EVA LILIAN 
+                        input(type="text" name="perez" placeholder="ingrese sueldo")
+                div(class="boxpersonal")
+                    div(class="personaldiv")
+                        div(class="personalname") LOZINA ROSA MARIA
+                        input(type="text" name="lozina" placeholder="ingrese sueldo")
+                div(class="boxpersonal")
+                    div(class="personaldiv")
+                        div(class="personalname") DELLA MAGDALENA MANUEL
+                        input(type="text" name="della" placeholder="ingrese sueldo")
+                div(class="boxpersonal")
+                    div(class="personaldiv")
+                        div(class="personalname") SANDOVAL SILVIA SUSANA 
+                        input(type="text" name="sandoval" placeholder="ingrese sueldo")
+                div(class="boxpersonal")
+                    div(class="personaldiv")
+                        div(class="personalname") LARROQUETE MARIA MATILDE
+                        input(type="text" name="larroquete" placeholder="ingrese sueldo")
+                div(class="btn-reporte")
+                        button Reporte
+                
+
+
+
+
+

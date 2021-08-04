@@ -1,0 +1,19 @@
+extends index.pug 
+block content 
+    form(method="POST" action="/perfil/guardar")
+        label Nombre
+        br
+        input(type="text" name="nombre" value = personal1.nombre) 
+        br
+        label Cbu
+        br
+        input(type="text" name="cbu" value = personal1.cbu)  
+        br
+        label Importe
+        br
+        input(type="text" name="import" value = personal1.import)
+        div
+                button Editar
+
+
+

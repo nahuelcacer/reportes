@@ -52,32 +52,6 @@ app.get("/perfil/:id" ,  async (req,res) =>{
             personal1
         })
 }); 
-app.post("/perfil/guardar", (req,res)=>{
-    let update = {nombre:req.body.nombre}
-
-    Personal.findOneAndUpdate({id:req.params.id}, update)   
-    res.end();
-});
-            /**app.post("/perfil/guardar", (req,res)=>{
-                const idJubi = req.body.id
-                console.log(idJubi)
-                
-                Personal.findByIdAndUpdate(idJubi, {
-                    nombre:req.body.nombre,noe
-                    import:req.body.import,
-                    fecha:req.body.fecha,
-                    cbu:req.body.cbu
-                }, function(err,result){
-                    if (err){
-                        res.send(err);
-                    }
-                    else{
-                        res.send(result)
-                    }
-                });
-                return res.redirect("/")
-
-            });*/
 /**SUELDO CAJA NOTARIAL */
 app.post("/caja" , function(req,res){
     /**FECHA */
@@ -140,13 +114,6 @@ app.post("/caja" , function(req,res){
     /**REPORTE */
 });
 /**SUELDO CAJA NOTARIAL */
-/**JUBILADOS Y PENSIONADOS */
-app.post("/", function(req,res){
-    var jub0 = req.body.Nahuel
-
-    res.send(jub0)
-});
-
 /**JUBILADOS Y PENSIONADOS */
 app.post("/jubilaciones", (req,res) =>{
    /*DATOS Y ARREGLSO*/

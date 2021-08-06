@@ -93,3 +93,26 @@ h1 {
     div {
         padding: 1px;
     }
+.links {
+    background-color: #fafafa;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  /* IMPORTANTE */
+  text-align: center;
+  font: bold 1rem/1.5em sans-serif;
+  width: 700px;
+}
+.link {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc
+}
+.link a{
+    color: black;
+    font-family: arial;
+    text-decoration: none;
+}
+.link:hover {
+    background-color: #f5f5f5;
+}
